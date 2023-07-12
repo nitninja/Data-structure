@@ -22,7 +22,7 @@ void RevNumPyramid(int n){
 
 }
 
-void DoublePyramid(int n){
+void DotPyramid(int n){
     int dotPos=(2*n)-2;
     int temp=0;
     for(int i=1;i<=n;i++){
@@ -59,7 +59,7 @@ int main(){
     printf("\n");
     RevNumPyramid(a);
     printf("\n\n");
-    DoublePyramid(7);
+    DotPyramid(7);
 
 }
 
