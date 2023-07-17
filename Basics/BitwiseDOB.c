@@ -34,12 +34,12 @@ int main(){
     // int d=DOB&1111100000000000;
     // intPrint(DOB);
     printf("%d-%d-%d",d>>11,m>>7,y+1900);
-    nxtLine;
-    intPrint(d>>11);
-    space;
-    intPrint(m>>7);
-    space;
-    intPrint(y+1900);
+    // nxtLine;
+    // intPrint(d>>11);
+    // space;
+    // intPrint(m>>7);
+    // space;
+    // intPrint(y+1900);
 
 // OUTPUT
 // 5-4-2001
