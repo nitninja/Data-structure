@@ -34,11 +34,8 @@ int main(){
     // int d=DOB&1111100000000000;
     // intPrint(DOB);
     printf("%d-%d-%d",d>>11,m>>7,y+1900);
-<<<<<<< HEAD
     // nxtLine;
-=======
     nxtLine
->>>>>>> 9ac7f2036baae6eccbca07bfd13b8eb4314ed7bd
     // intPrint(d>>11);
     // space;
     // intPrint(m>>7);
