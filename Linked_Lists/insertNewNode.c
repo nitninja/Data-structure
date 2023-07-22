@@ -47,7 +47,7 @@ void insertNewNodeAtEnd(node *head){
     }
 }
 
-//error of some kind
+
 void insertNodeATBeginning(node *head){
     node* temp=(node*)malloc(sizeof(node));
     if(temp==NULL) exit(1);
