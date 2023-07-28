@@ -47,8 +47,9 @@ void insertNewNodeAtEnd(node *head){
     }
 }
 
-//error of some kind
+
 node *insertNodeATBeginning(node *head){
+
     node* temp=(node*)malloc(sizeof(node));
     if(temp==NULL) exit(1);
     scanf("%d",&temp->data);
