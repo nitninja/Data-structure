@@ -34,7 +34,7 @@ n* t=NULL;
 // }
 
 
-int listLength(n* h){
+int listLength(n *h){
     if(h==NULL){
         return 0;
     }
@@ -49,34 +49,34 @@ int listLength(n* h){
     }
 }
 
-void insertNewNodeAtEnd(n *h){
-    n *x=(n *)malloc(sizeof(n));
-    if(x==NULL) exit(1);
-    scanf("%d",&x->data);
-    x->next=NULL;
-    if(h==NULL) h=x;
-    else{
-        while(h->next!=NULL){
-            h=h->next;
-        }
-        h->next=x;
-    }
-}
+// void insertNewNodeAtEnd(n *h){
+//     n *x=(n *)malloc(sizeof(n));
+//     if(x==NULL) exit(1);
+//     scanf("%d",&x->data);
+//     x->next=NULL;
+//     if(h==NULL) h=x;
+//     else{
+//         while(h->next!=NULL){
+//             h=h->next;
+//         }
+//         h->next=x;
+//     }
+// }
 
-//error of some kind
-void insertNodeATBeginning(n *h){
-    n* x=(n*)malloc(sizeof(n));
-    if(x==NULL) exit(1);
-    scanf("%d",&x->data);
-    x->next=NULL;
-    if(h==NULL){
-        h=x;
-    }
-    else{
-        x->next=h;
-        h=x;        
-    }
-}
+// //error of some kind
+// void insertNodeATBeginning(n *h){
+//     n* x=(n*)malloc(sizeof(n));
+//     if(x==NULL) exit(1);
+//     scanf("%d",&x->data);
+//     x->next=NULL;
+//     if(h==NULL){
+//         h=x;
+//     }
+//     else{
+//         x->next=h;
+//         h=x;        
+//     }
+// }
 
 // int main(){
 //     freopen("/home/nitish/Documents/inputOutput/input.txt","r",stdin);

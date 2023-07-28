@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include"NodeCount.c"
+// #include"NodeCount.c"
 #include"UsefullLLFunctions.c"
 
 struct Node{
@@ -37,6 +37,7 @@ void insertNode(int data){
 
 void insertAtPos(node *head,int pos){
     int length=listLength(head);
+    printf("%d\n",length);
     if(pos<=0||pos>length+1) printf("Invalid Postion");
     else if(pos==1) insertNodeATBeginning(head);
     else if(pos==length+1) insertNewNodeAtEnd(head);
@@ -66,8 +67,12 @@ int main(){
     insertNode(4);
     insertNode(5);
     insertNode(6);
+    insertNode(7);
+    insertNode(8);
 
     insertAtPos(head,6);
+    // int length=listLength(head);
+    // printf("%d\n",length);
 
     PrintList(head);
 

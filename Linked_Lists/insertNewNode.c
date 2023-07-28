@@ -48,7 +48,7 @@ void insertNewNodeAtEnd(node *head){
 }
 
 //error of some kind
-void insertNodeATBeginning(node *head){
+node *insertNodeATBeginning(node *head){
     node* temp=(node*)malloc(sizeof(node));
     if(temp==NULL) exit(1);
     scanf("%d",&temp->data);
@@ -60,6 +60,7 @@ void insertNodeATBeginning(node *head){
         temp->next=head;
         head=temp;        
     }
+    return head;
 }
 
 int main(){
@@ -74,12 +75,12 @@ int main(){
     insertNode(6);
 
     insertNewNodeAtEnd(head);
-    insertNodeATBeginning(head);
+    head = insertNodeATBeginning(head);
     PrintList(head);
 
 // INPUT
-// 7 0
+// 9 0
 // OUTPUT
-// 1->2->3->4->5->6->7->
+// 0->1->2->3->4->5->6->9->
 
 }
